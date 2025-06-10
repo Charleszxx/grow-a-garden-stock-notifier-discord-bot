@@ -171,3 +171,16 @@ fetchAndNotifyWeather(); // run once on startup
 
 // Login bot
 client.login(process.env.DISCORD_TOKEN);
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Bot is running!');
+});
+
+// Bind to the port Render assigns
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🌐 Express server listening on port ${PORT}`);
+});
