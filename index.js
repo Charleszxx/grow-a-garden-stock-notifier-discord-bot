@@ -176,11 +176,11 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Bot is running!');
+  res.send('🌱 Bot is alive!');
 });
 
-// Bind to the port Render assigns
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🌐 Express server listening on port ${PORT}`);
+  console.log(`🌐 Listening on port ${PORT}`);
 });
+
