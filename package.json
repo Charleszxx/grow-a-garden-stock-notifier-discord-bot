@@ -1,10 +1,14 @@
 {
   "name": "grow-a-garden-stock-bot",
   "version": "1.0.0",
+  "description": "A Discord bot that notifies stock and weather updates for Grow a Garden.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "keywords": ["discord", "bot", "stock", "grow-a-garden"],
+  "author": "Charles Derick Coloso",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1",
